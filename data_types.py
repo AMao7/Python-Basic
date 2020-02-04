@@ -29,4 +29,4 @@ print(len(my_string.strip()))       # strips and then counts characters
 print(my_string.strip().capitalize())
 print(my_string.strip().upper())
 print(my_string.strip().lower())
-print(my_string.strip().split   ())
+print(my_string.strip().split(' '))     # can split by space, by position or letters
