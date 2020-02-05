@@ -12,4 +12,3 @@ print("I like", favourite_color.capitalize(), "too!")
 print(' What is your secret number?')
 secret_num = input()
 print("You're secret number is", secret_num.capitalize(), "MINE TOO OMG")
-

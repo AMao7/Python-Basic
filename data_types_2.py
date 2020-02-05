@@ -46,4 +46,14 @@ print(my_variable == my_variable2)
 print(my_variable == 10)
 print(my_variable < my_variable2)
 
+# booleans are true or false
+# they are binary
+# none does not exist
 
+# Operators, Logical and Logical Or
+a_var = True
+b_var = False
+
+print(a_var & True)
+print(a_var & False)        # Logical and & requires both sides to be true to remain true
+print(True or False)        # Logical or requires one side to be true to remain true
