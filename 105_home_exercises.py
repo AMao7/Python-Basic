@@ -34,22 +34,27 @@ print("Hello", first_name, last_name, "!", "your age is",  age, "your mother's a
     # add each response to the dictionary under an appropriate key
 # Print out a the dictionary information in an ordered way so we can read the story.
 
-story_dictionary = {'beginning': 'finds out about sauron', 'middle': 'travels to mordor',
-                    'end': 'throws ring into mountain of doom', 'hero': 'Frodo baggins', 'villain': 'Sauron',
-                    'type of ending': 'nice'}
+story_dictionary = {}
 
-beginning_key = story_dictionary['beginning']
-middle_key = story_dictionary['middle']
-end_key = story_dictionary['end']
-hero_key = story_dictionary['hero']
-villain_key = story_dictionary['villain']
-type_of_ending__key = story_dictionary['type of ending']
-print("The" , hero_key)
-print(beginning_key)
-print(middle_key)
-print(end_key)
-print("and defeats", villain_key)
-print("and everything was", type_of_ending__key)
+print("Who is the hero of the story?")
+hero_key = input().strip().capitalize()
+print("Who is the villain in the story?")
+villain_key = input().strip().capitalize()
+print("What is the beginning of the story?")
+beginning_key = input().strip().capitalize()
+print("What is the middle of the story?")
+middle_key = input().strip().capitalize()
+print("What is the end of the story?")
+end_key = input().strip().capitalize()
+print("What type of ending is the story?")
+type_of_ending = input().strip().capitalize()
+
+story_dictionary = {hero_key, villain_key, beginning_key, middle_key, end_key, type_of_ending}
+print(story_dictionary)
+
+print("The hero of the story is", hero_key, "and the villain is", villain_key, ", The story begins with", beginning_key,
+      "And then", middle_key, "Finally,", end_key, "The ending was very", type_of_ending);
+
 
 
 
