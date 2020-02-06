@@ -1,3 +1,3 @@
-# Python Basics Engineering 
+# Python Basics for Engineering
 
-This is our python 
+## Learning all the basics of Python
