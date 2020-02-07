@@ -8,58 +8,63 @@
 # substituting the multiples of 3 and 5 with the appropriate values,
 # So that I can see if it is working
 # import time
-# while True:
-#
-#     num = int(input("give a numnber to count up to, enter 000 to end the game"))
-#     count_num = 1
-#     if num == 000:
-#         break
-#
-#     while num >= count_num:
-#
-#         if count_num % 15 == 0:
-#             print("fizzbuzz")
-#             time.sleep()
-#
-#         elif count_num % 3 == 0:
-#             print("fizz")
-#
-#         elif count_num % 5 == 0:
-#             print("buzz")
-#
-#         else:
-#             print(count_num)
-#         count_num += 1
-
-
-# def fizz(x):
-#     if x % 5 == 0:
-#         return "fizz"
-#
-#
-# def buzz(x):
-#     if x % 3 == 0:
-#         return "buzz"
-#
-#
-# def fizz_buzz(x):
-#     if x % 15 == 0:
-#         return "fizzbuzz"
-#
-#
-# print(buzz(6))
 while True:
-    question = input("what is your question sir").strip().lower()
+
+    num = int(input("give a numnber to count up to, enter 000 to end the game"))
+    count_num = 1
+    if num == 000:
+        break
+
+    while num >= count_num:
+
+        if count_num % 15 == 0:
+            print("fizzbuzz")
+            time.sleep(1)
+
+        elif count_num % 3 == 0:
+            print("fizz")
+
+        elif count_num % 5 == 0:
+            print("buzz")
+
+        else:
+            print(count_num)
+        count_num += 1
+
+
+def fizz(x):
+    if x % 5 == 0:
+        return "fizz"
+
+
+def buzz(x):
+    if x % 3 == 0:
+        return "buzz"
+
+
+def fizz_buzz(x):
+    if x % 15 == 0:
+        return "fizzbuzz"
+
+
+print(buzz(6))
+while True:
+    question = (input("what is your question sir ")).strip().lower()
     print("questions are wise, but for now. Wax on, and Wax off!")
 
     if "sensei" not in question:
         print("You are smart, but not wise, address me as sensei please")
 
+    elif "block" or "blocking:" in question:
+        print("Rememeber, best block, not to be there")
+
+
     elif "sensei im at peace" in question:
         print('Sometimes, what heart know, head forget')
 
-    elif "block" or "blocking:" in question:
-        print("Rememeber, best block, not to be there")
+
+    elif "sensei" or "block" or "blocking" or "sensei im at peace" not in question:
+        print("do not lose focus. Wax on. Wax off")
 
     else:
         print("do not lose focus. Wax on. Wax off.")
