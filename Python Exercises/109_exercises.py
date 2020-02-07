@@ -49,20 +49,19 @@
 #
 # print(buzz(6))
 while True:
-    question = input("what is your question sir")
+    question = input("what is your question sir").strip().lower()
     print("questions are wise, but for now. Wax on, and Wax off!")
 
-
-    if question != "sensei":
+    if "sensei" not in question:
         print("You are smart, but not wise, address me as sensei please")
 
-    elif question == "sensei im at peace":
+    elif "sensei im at peace" in question:
         print('Sometimes, what heart know, head forget')
 
-    elif question == "block" or "blocking:":
-            print("Rememeber, best block, not to be there")
+    elif "block" or "blocking:" in question:
+        print("Rememeber, best block, not to be there")
 
     else:
-           print("do not lose focus. Wax on. Wax off.")
+        print("do not lose focus. Wax on. Wax off.")
 
 
