@@ -7,50 +7,62 @@
 # As a player, I should see the game counting up to my number and
 # substituting the multiples of 3 and 5 with the appropriate values,
 # So that I can see if it is working
-import time
+# import time
+# while True:
+#
+#     num = int(input("give a numnber to count up to, enter 000 to end the game"))
+#     count_num = 1
+#     if num == 000:
+#         break
+#
+#     while num >= count_num:
+#
+#         if count_num % 15 == 0:
+#             print("fizzbuzz")
+#             time.sleep()
+#
+#         elif count_num % 3 == 0:
+#             print("fizz")
+#
+#         elif count_num % 5 == 0:
+#             print("buzz")
+#
+#         else:
+#             print(count_num)
+#         count_num += 1
+
+
+# def fizz(x):
+#     if x % 5 == 0:
+#         return "fizz"
+#
+#
+# def buzz(x):
+#     if x % 3 == 0:
+#         return "buzz"
+#
+#
+# def fizz_buzz(x):
+#     if x % 15 == 0:
+#         return "fizzbuzz"
+#
+#
+# print(buzz(6))
 while True:
-
-    num = int(input("give a numnber to count up to, enter 000 to end the game"))
-    count_num = 1
-    if num == 000:
-        break
-
-    while num > count_num:
-
-        if count_num % 15 == 0:
-            print("fizzbuzz")
-            time.sleep()
+    question = input("what is your question sir")
+    print("questions are wise, but for now. Wax on, and Wax off!")
 
 
-        elif count_num % 3 == 0:
-            print("fizz")
+    if question != "sensei":
+        print("You are smart, but not wise, address me as sensei please")
 
-        elif count_num % 5 == 0:
-            print("buzz")
+    elif question == "sensei im at peace":
+        print('Sometimes, what heart know, head forget')
 
-        else:
-            print(count_num)
-        count_num += 1
+    elif question == "block" or "blocking:":
+            print("Rememeber, best block, not to be there")
 
-
-
-
+    else:
+           print("do not lose focus. Wax on. Wax off.")
 
 
-# Make a weather/clothing game ## project
-# IF statements
-# Ask for user input and depending on the response advise on their attire.
-#
-# prompt user for input
-# Evaluate each input and print the appropriate responses
-# Follow these rules:
-#
-# when sunny >> respond with 'take your shorts!'
-# stormy >> respond with 'take rain coat'
-# rainy >> respond with 'Take your umbrella'
-# rainy and stormy >> 'stay home'
-# anything else respond with 'sorry, i didn't quite catch that'
-# Make it so you keep playing until we say: 'No more Magic'
-
-# s#unny = input("What is the weather like today sir!")
-# if input()
